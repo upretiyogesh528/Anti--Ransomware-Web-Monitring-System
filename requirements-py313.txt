@@ -1,0 +1,17 @@
+# Python 3.13 compatible requirements for ransomware detection tool
+
+# Core dependencies
+flask==2.3.3
+watchdog==3.0.0
+numpy==2.2.5
+scipy==1.13.1
+scikit-learn==1.5.0
+pandas==2.2.1
+matplotlib==3.9.0
+psutil==5.9.6
+colorlog==6.8.0
+
+# Platform-specific dependencies
+python-magic==0.4.27; platform_system!="Windows"
+python-magic-bin==0.4.14; platform_system=="Windows"
+pywin32==306; platform_system=="Windows"
